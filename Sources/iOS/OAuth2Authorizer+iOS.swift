@@ -49,9 +49,9 @@ public final class OAuth2Authorizer: OAuth2AuthorizerUI {
 	- throws: UnableToOpenAuthorizeURL on failure
 	*/
 	public func openAuthorizeURLInBrowser(_ url: URL) throws {
-		if !UIApplication.shared.openURL(url) {
+//		if !UIApplication.shared.openURL(url) {
 			throw OAuth2Error.unableToOpenAuthorizeURL
-		}
+//		}
 	}
 	
 	/**
